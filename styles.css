@@ -1,0 +1,281 @@
+/* FIXED */
+/* 1)- Fix the underline on HOME */
+    /* Made border bottom on span inside the <a> text. */
+/* 4)- Center the widget contents horizontally*/
+    /* Display: flex and then align-items: center.  */
+ /* 2)- Remove the last border from last widget */
+    /* element:last-child {} */
+/* 5)- Fix the comments  */
+/* 3)- see why object fit cover isn't working  */
+    /* WORKS when you fix the width & height */
+
+    /* check how's the underline is working in adobe */
+
+  /* Needs Fixing */
+  /* 1.1)- Fix the spacing between the border-bottom and txt */
+  /* 5.1) Fix the comments for large screens title and comments should be side by side */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #707070;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background: #f8f8f8;
+}
+
+.logo {
+    padding: 1.25em;
+}
+
+.subtitle {
+    margin-top: 0;
+    color: #1792D2;
+    font-size: .75rem;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5em;
+}
+
+nav a{
+    text-decoration: none;
+    color: #717171;
+    font-size: 1rem;
+    letter-spacing: 3.2px;
+    font-weight: bold;
+    margin: .45em;
+}
+
+nav a span:hover,
+nav a span:focus {
+    border-bottom: 3px solid #717171;
+}
+
+/* 1rem = 16px */
+h1, h2, p {
+    margin-top: 0;
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+    color: #143774;
+}
+h1 {
+    
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+/* Fix here for underline problem */
+.current-page {
+    border-bottom: 3px solid #717171;
+}
+
+/* So that when user is on the specific page you can't 
+    navigate to that same page */
+.current-page:hover {
+    color: #717171;
+}
+
+/* Footer styling */
+footer {
+    padding: 2em;
+    background: #143774;
+}
+
+footer h2,
+footer p {
+    color: #fff;
+    opacity: 50%;
+}
+
+footer h2 {
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+/* footer- styling end */
+
+
+/* ========
+ * Layout  
+   ======== */
+
+/* change width of main */
+main {
+    padding: 3em 2em 1em;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.article {
+    padding-bottom: 1.75em;
+}
+
+.article-title {
+    order: -1;
+}
+
+img {
+    max-width: 100%;
+}
+
+.article-info,
+.article-featured-info {
+    font-size: .875rem;
+    color: #707070;
+    margin-top: 2em;
+}
+
+
+.article-continue {
+    text-decoration: none;
+    color: #1792D2;
+    font-weight: bold;
+    font-size: .875em;
+    letter-spacing: 2.5px;
+}
+
+.article-continue:focus,
+.article-continue:hover {
+    color: #143774;
+    text-decoration: underline;
+}
+
+.widget-aboutme,
+.widget-recent {
+    border: 25px solid #EBEBEB;
+    padding: 1.5em;
+    margin-bottom: 3em;
+}
+
+.widget-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    letter-spacing: 3.6px;
+}
+
+.post-title {
+    margin-top: .35em;
+}
+
+.widget-post {
+    margin-top: 1.75em;
+    border-bottom: 3px solid #EBEBEB;
+
+}
+
+.widget-aboutme h4 {
+    color: #143774;
+    font-weight: 400;
+}
+
+.widget-img {
+    width: 550px;
+    height: 20vh;
+    object-fit: cover;
+}
+
+/* to remove border from last widget element */
+.border-none {
+    border-bottom: none;
+}
+
+@media (min-width: 730px) {
+    /* Header  */
+    .box {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    nav {
+        flex-direction: row;
+        padding-top: 2em;
+    }
+
+    nav a {
+        letter-spacing: 1px;
+        margin: 0 .75em;
+    }
+
+    .subtitle {
+        padding-bottom: 0;
+    }
+
+    /* Header finished */
+
+    /* Main content (body) */
+    main {
+        display: flex;
+        max-width: 900px;
+        justify-content: space-between;
+    }
+
+    .main-content {
+        max-width: 69%;
+    }
+
+    .featured {
+        margin-bottom: 2em;
+    }
+
+    .widget {
+        max-width: 27%;
+    }
+
+    .widget-aboutme,
+    .widget-recent {
+        border: 20px solid #EBEBEB;
+        padding: 1em;
+        margin-bottom: 2em;
+    }
+
+    /* 2 classes .photo-info .rest */
+    .article {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+
+    .article-featured {
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+
+    .photo-info {
+        max-width: 30%;
+    }
+    .article .article-img {
+        width: 198px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .rest {
+        max-width: 67%;
+    }
+
+    .article-info {
+        margin-top: 1em;
+        font-size: .85em;
+    }
+
+}
