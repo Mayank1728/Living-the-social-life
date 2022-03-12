@@ -59,6 +59,9 @@ nav a span:focus {
 }
 
 /* 1rem = 16px */
+strong {
+    font-weight: 700;
+}
 h1, h2, p {
     margin-top: 0;
 }
@@ -77,6 +80,15 @@ h1 {
 h2 {
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+a {
+    color: #1792D2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 
@@ -125,6 +137,12 @@ main {
 
 .article {
     padding-bottom: 1.75em;
+}
+
+.article-featured {
+    padding-bottom: 1.5em;
+    border-bottom: #ccc9c9 3px solid;
+    margin-bottom: 1.5em;
 }
 
 .article-title {
@@ -258,7 +276,6 @@ img {
 
     .article-featured {
         flex-direction: column;
-        margin-bottom: 2em;
     }
 
     .photo-info {
