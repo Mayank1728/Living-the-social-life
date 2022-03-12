@@ -8,13 +8,12 @@
 /* 5)- Fix the comments  */
 /* 3)- see why object fit cover isn't working  */
     /* WORKS when you fix the width & height */
-
-    /* check how's the underline is working in adobe */
+/* 1.1)- Fix the spacing between the border-bottom and txt */
+/* 5.1) Fix the comments for large screens title and comments should be side by side */
 
   /* Needs Fixing */
-  /* 1.1)- Fix the spacing between the border-bottom and txt */
-  /* 5.1) Fix the comments for large screens title and comments should be side by side */
-
+  
+  
 body {
     font-family: 'Ubuntu', sans-serif;
     color: #707070;
@@ -219,8 +218,8 @@ img {
     /* Header  */
     .box {
         display: flex;
-        justify-content: space-around;
-        max-width: 1000px;
+        justify-content: space-between;
+        max-width: 940px;
         margin: 0 auto;
     }
 
