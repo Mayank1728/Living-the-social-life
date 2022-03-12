@@ -82,12 +82,12 @@ h2 {
     font-weight: 400;
 }
 
-a {
+.article-body a {
     color: #1792D2;
     text-decoration: none;
 }
 
-a:hover {
+.article-body a:hover {
     text-decoration: underline;
 }
 
