@@ -141,7 +141,6 @@ main {
 
 .article-featured {
     padding-bottom: 1.5em;
-    border-bottom: #ccc9c9 3px solid;
     margin-bottom: 1.5em;
 }
 
@@ -256,6 +255,12 @@ img {
         margin-bottom: 2em;
     }
 
+    .article-featured {
+        flex-direction: column;
+        border-bottom: #ccc9c9 3px solid;
+    }
+    
+
     .widget {
         max-width: 27%;
     }
@@ -272,10 +277,6 @@ img {
         display: flex;
         justify-content: space-between;
         margin-bottom: 1em;
-    }
-
-    .article-featured {
-        flex-direction: column;
     }
 
     .photo-info {
